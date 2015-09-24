@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+    <TextView
+        android:id="@+id/lblRegistrantName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_alignParentLeft="true"
+
+        android:maxLines="1"
+        android:ellipsize="marquee"
+
+        android:text="Ching King Him Jonathan"
+        android:textSize="24sp"
+        />
+    <TextView
+        android:id="@+id/lblRegistrantUcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblRegistrantName"
+        android:layout_marginLeft="4dp"
+
+        android:text="HKU"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/lblRegistrantPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblRegistrantName"
+        android:layout_toRightOf="@id/lblRegistrantUcode"
+        android:layout_marginLeft="4dp"
+
+        android:text="66422088"
+        android:textSize="16sp"
+        android:autoLink="phone"
+        android:linksClickable="true"
+        android:textColor="@color/bg_blue_dark"
+
+        />
+    <TextView
+        android:id="@+id/lblRegistrantEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblRegistrantName"
+        android:layout_toRightOf="@id/lblRegistrantPhone"
+        android:layout_marginLeft="4dp"
+
+        android:maxLines="1"
+        android:text="someone@hku.hk"
+        android:textSize="16sp"
+        android:autoLink="email"
+        android:ellipsize="marquee"/>
+    <CheckBox
+        android:id="@+id/chbAttendanceStatus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_alignParentRight="true"
+
+        android:scaleType="fitCenter"/>
+
+</RelativeLayout>

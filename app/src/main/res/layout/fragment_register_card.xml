@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="org.aieseclchku.im.tap_in.RegisterCardFragment"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:background="@color/bg_orange"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblRegCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:textColor="@color/brown"
+        android:text="Tap a name below"/>
+    <TextView
+        android:id="@+id/lblUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textColor="@color/brown"
+        android:text="Tap here to update"/>
+
+
+    <ListView
+        android:id="@+id/listUnregisteredPersons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="8dp"
+        android:background="@color/white">
+
+
+        <EditText
+            android:id="@+id/txtSearch_reg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/btnAddMobile"
+
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:hint="or enter full mobile number"
+            android:textSize="18sp"
+            android:textColor="@color/brown"
+            android:focusable="true"
+            android:inputType="phone"/>
+        <Button
+            android:id="@id/btnAddMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/trans"
+
+
+            android:text="Add"
+            android:textColor="@color/brown"
+            android:enabled="false"/>
+        </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_blue">#ff00bbff</color>
+    <color name="bg_blue_dark">#ff001177</color>
+    <color name="bg_orange">#ffff9900</color>
+    <color name="bg_pink">#ffff00aa</color>
+    <color name="disabled">#4222</color>
+    <color name="white">#ffffffff</color>
+    <color name="white_alpha">#99ffffff</color>
+    <color name="brown">#ff663300</color>
+    <color name="trans">#0000</color>
+</resources>

@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="org.aieseclchku.im.tap_in.event_details"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_blue_dark"
+        android:padding="12dp">
+        <TextView
+            android:id="@+id/lblEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dummy Event Name"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/lblEventDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblEventName"
+
+            android:text="2 JAN 2015 09:00"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/btnTakeAttendance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/lblEventName"
+
+            android:textSize="20sp"
+            android:text="TAKE ATTENDANCE"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/txtFilterRegistrants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+
+        android:hint="filter. '+name' for attended, '-name' otherwise"
+        android:inputType="textVisiblePassword"
+        />
+    <ListView
+        android:id="@+id/listRegistrants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+</LinearLayout>

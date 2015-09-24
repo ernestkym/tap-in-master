@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.aieseclchku.im.tap_in.EventListFragment"
+    android:orientation="vertical">
+
+   <!-- <Button
+        android:id="@+id/btnToReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Click MEEEEEE"/>-->
+    <ImageView
+        android:id="@+id/imgWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/bg_blue"
+        android:src="@drawable/banner"/>
+
+    <TextView
+        android:id="@+id/lblWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+
+        android:background="@color/bg_blue"
+        android:text="Welcome to Tap-in!\nPlease select an event:"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+    <ListView
+        android:id="@+id/listEvents"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+
+        android:textFilterEnabled="false"
+        android:textAlignment="center"
+        />
+
+
+</LinearLayout>

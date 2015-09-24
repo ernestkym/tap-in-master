@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/lblPersonUCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+
+        android:text="HKU"
+        android:textSize="16sp"
+        android:textColor="@color/white_alpha"
+        android:fontFamily="sans-serif-light"
+
+        />
+    <TextView
+        android:id="@+id/lblPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/lblPersonUCode"
+
+        android:maxLines="1"
+        android:ellipsize="marquee"
+
+        android:text="Ching King Him Jonathan"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>
